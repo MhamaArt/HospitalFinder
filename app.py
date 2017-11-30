@@ -1,8 +1,6 @@
 from gevent import monkey; monkey.patch_all()
 from wsgiref import simple_server
 
-import falcon
-
 # resources
 from resources import *
 
