@@ -16,5 +16,5 @@ app = falcon.API(middleware=middleware)
 app.add_route('/symptoms', SymptomResource())
 
 if __name__ == '__main__':
-    httpd = simple_server.make_server('0.0.0.0', 5555, app)
+    httpd = simple_server.make_server('0.0.0.0', 5558, app)
     httpd.serve_forever()
