@@ -10,6 +10,7 @@ RUN apt-get install -y apt-utils git libhunspell-dev libpq-dev
 ADD .git/HEAD /app/CACHE_BUSTER
 RUN rm /app/CACHE_BUSTER
 
-ADD / /code/
+ADD / /code
 
 RUN pip install -r /code/requirements.txt
+WORKDIR /code
