@@ -2,4 +2,7 @@ falcon
 ujson
 peewee
 psycopg2
+falcon
+gunicorn
 gevent
+grequests
