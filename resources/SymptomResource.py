@@ -1,9 +1,11 @@
 import falcon
-
+import ujson as json
 
 class SymptomResource:
 
     def on_get(self, req, resp):
 
-        # test
-        pass
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps({
+            "test": True
+        })
